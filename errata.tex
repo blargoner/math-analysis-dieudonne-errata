@@ -1,0 +1,82 @@
+% Errata from Foundations of Modern Analysis by Dieudonne
+% By John Peloquin
+\documentclass[letterpaper,12pt]{article}
+\usepackage{amsmath,amssymb,amsthm,enumitem,fourier}
+
+\newcommand{\B}{\mathcal{B}}
+\renewcommand{\Im}{\mathcal{I}}
+
+\newcommand{\union}{\cup}
+\newcommand{\sect}{\cap}
+
+\newcommand{\abs}[1]{|{#1}|}
+\newcommand{\norm}[1]{\lVert{#1}\rVert}
+
+% Meta
+\title{Errata from \textit{Foundations of Modern Analysis}}
+\author{John Peloquin}
+\date{}
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+This document contains errata from~\cite{dieudonne8th}. Locations in the text are indicated by coordinates~\((p,n)\), where \(p\)~is a page number and \(n\)~is a line number on page~\(p\). Positive line numbers count from the top of the page, whereas negative line numbers count from the bottom of the page. Displayed equations, diagrams, and figures are counted as single lines. An asterisk indicates that the error was corrected in~\cite{dieudonne9th} (at different coordinates).
+
+Errata are currently only listed for Chapters I--VII, not including problems.
+
+\section*{Chapter~I}
+\begin{itemize}
+\item (12, -4): ``if a set~\(A\) is at most denumerable'' should be ``if a nonempty set~\(A\) is at most denumerable''.
+\end{itemize}
+
+\section*{Chapter~II}
+\begin{itemize}
+\item (17, 14): in~(2.2.3), ``Any finite subset~\(A\)'' should be ``Any nonempty finite subset~\(A\)''.
+\item (22, -14)*: in the proof of~(2.3.2), \(2^{-n}\le\beta-\alpha\) should be \(2^{-n}\ge\beta-\alpha\).
+\item (23, 3): infimum and supremum of the empty set and of sets unbounded below and above, respectively, should be defined here since they occur in the text.
+\end{itemize}
+
+\section*{Chapter~III}
+\begin{itemize}
+\item (30,-14)*: in~(3.3.2), ``\(1/(1+\abs{x}\)'' should be ``\(1/(1+\abs{x})\)''.
+\item (35, -6)*: in the proof of~(3.7.4), \(d(x,y)>r\) should be \(d(x,y)\ge r\).
+\item (42, 7): in the proof of~(3.10.9), ``the sets \(G_n\sect F\) form a denumerable basis'' should be ``the sets \(G_n\sect F\) form an at most denumerable basis''.
+\item (54, -12)*, (54,-9)*: in the proof of~(3.15.5), \(\overline{f}(x)=\lim_{y\to x,x\in A}f(y)\) should be \(\overline{f}(x)=\lim_{y\to x,y\in A}f(y)\).
+\item (56, -3)*: in the proof of~(3.16.1) (c)\(\implies\)(a), ``there is one at least~\(B_k\)'' should be ``there is one at least~\(B_n\)''.
+\item (60, -3)*: in the proof of~(3.17.8), \((A\union V_{\lambda})_{\lambda\in H}\) should be \((A\sect V_{\lambda})_{\lambda\in H}\).
+\end{itemize}
+
+\section*{Chapter~IV}
+\begin{itemize}
+\item (77, 9)*: in the proof of~(4.1.7), \(]-1,+1]\)~should be~\(]-1,+1[\).
+\end{itemize}
+
+\section*{Chapter~V}
+\begin{itemize}
+\item (91, -4): above~(5.2.1), \(x_{n+k}\)~should be~\(x_{n+k+1}\).
+\item (98, 5): in the definition of vector subspace, ``a subset'' should be ``a nonempty subset''.
+\item (100, 13)*: in~(5.5.2), ``mapping of a Banach space into a Banach space~\(F\)'' should be ``mapping of a Banach space~\(E\) into a Banach space~\(F\)''.
+\item (104, 12)*: in~(5.7.6), \(a\not\in F\) should be \(a\in F\).
+\end{itemize}
+
+\section*{Chapter~VI}
+\begin{itemize}
+\item (112, 2)*: ``scalars'' should be ``vectors and scalars''.
+\item (116, 9): in the proof of the displayed inequality in~(6.3.1), ``by~(6.1.1)'' should be ``by~(6.1.1) and substitution of~\(-\lambda\) for~\(\lambda\)''.
+\item (118, 15)*: above~(6.4.1), \((x^{(m)})=(x^{(m)}_n)\) should be \((x^{(m)})=((x^{(m)}_n))\).
+\end{itemize}
+
+\section*{Chapter~VII}
+\begin{itemize}
+\item (128, 13)*: \(\norm{u_n(t)}\le u_n\) should be \(\norm{u_n(t)}\le\norm{u_n}\).
+\item (133, 11)*: in the proof of~(7.3.2), \(\mathcal{D}f\)~should be~\(\Im f\).
+\item (139, 8)*: \(\lim_{y\in I,y>x,y\to x}f(x)\) should be \(\lim_{y\in I,y>x,y\to x}f(y)\).
+\item (139, -2): \(\B_F(E)\)~should be~\(\B_F(I)\).
+\end{itemize}
+
+% References
+\begin{thebibliography}{0}
+\bibitem{dieudonne8th} Dieudonn\'e, J. \textit{Foundations of Modern Analysis,} 8th printing. Academic Press, 1960.
+\bibitem{dieudonne9th} Dieudonn\'e, J. \textit{Foundations of Modern Analysis,} 9th (enlarged and corrected) printing. Volume 1 of \emph{Treatise on Analysis.} Academic Press, 1969.
+\end{thebibliography}
+\end{document}
