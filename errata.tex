@@ -5,9 +5,11 @@
 
 \newcommand{\B}{\mathcal{B}}
 \renewcommand{\Im}{\mathcal{I}}
+\newcommand{\E}{\mathcal{E}}
 
 \newcommand{\union}{\cup}
 \newcommand{\sect}{\cap}
+\newcommand{\after}{\circ}
 
 \newcommand{\abs}[1]{|{#1}|}
 \newcommand{\norm}[1]{\lVert{#1}\rVert}
@@ -22,7 +24,7 @@
 \section*{Introduction}
 This document contains errata from~\cite{dieudonne8th}. Locations in the text are indicated by coordinates~\((p,n)\), where \(p\)~is a page number and \(n\)~is a line number on page~\(p\). Positive line numbers count from the top of the page, whereas negative line numbers count from the bottom of the page. Displayed equations, diagrams, and figures are counted as single lines. An asterisk indicates that the error was corrected in~\cite{dieudonne9th} (at different coordinates).
 
-Errata are currently only listed for Chapters I--VII, not including problems.
+Errata are currently only listed for Chapters I--VIII, not including problems.
 
 \section*{Chapter~I}
 \begin{itemize}
@@ -72,6 +74,34 @@ Errata are currently only listed for Chapters I--VII, not including problems.
 \item (133, 11)*: in the proof of~(7.3.2), \(\mathcal{D}f\)~should be~\(\Im f\).
 \item (139, 8)*: \(\lim_{y\in I,y>x,y\to x}f(x)\) should be \(\lim_{y\in I,y>x,y\to x}f(y)\).
 \item (139, -2): \(\B_F(E)\)~should be~\(\B_F(I)\).
+\end{itemize}
+
+\section*{Chapter~VIII}
+\begin{itemize}
+\item (143, 7)*: in the definition of tangency of mappings \(f\)~and~\(g\) at a point~\(x_0\), it should be required that \(f(x_0)=g(x_0)\).\footnote{In~\cite{dieudonne9th}, it is required instead that \(f\)~and~\(g\) be continuous, which ensures that \(f(x_0)=g(x_0)\) but makes the proof of~(8.1.1) superfluous.}
+\item (148, -6)*: in the displayed equation below~(8.3.2.2), \(1-w^{N+1}\) should be \(1-(-1)^{N+1}w^{N+1}\).
+\item (150, 7)*: \(g'(\xi)(Df(g(\xi))\) should be \(g'(\xi)Df(g(\xi))\).
+\item (157, -9): in the proof that \(g=f'\) in~(8.6.3), \(\norm{f_n'(z)-f_m'(z)}\le\epsilon/r\) should be \(\norm{f_n'(z)-f_m'(z)}\le\epsilon\).
+\item (158, 3): in~(8.6.4), ``\(g_n(\xi)\)~is the derivative of a continuous function~\(f_n\)'' should be ``\(g_n(\xi)\)~is the derivative of a continuous function~\(f_n\) at~\(\xi\)''.
+\item (158, 7), (158, 9): in~(8.6.4), \(A\)~should be~\(I\).
+\item (167, -5): in the proof of~(8.9.1), ``\(x_1\mapsto f(x_1,a_2)\) has at~\((a_1,a_2)\) a derivative'' should be ``\(x_1\mapsto f(x_1,a_2)\) has at~\(a_1\) a derivative''.
+\item (168, -4): in the proof of~(8.9.1), \(Df=D_1f\after i_1+D_2f\after i_2\) should be \(Df=P_1\after D_1f+P_2\after D_2f\) where \(P_k(\varphi)=\varphi\after pr_k\).\footnote{In~\cite{dieudonne9th}, \(Df=D_1f\after pr_1+D_2f\after pr_2\) is also incorrect.}
+\item (169, 6)*: the displayed equation in~(8.9.2) should be
+\[Dh(x)=\sum_{k=1}^nD_kf(g(x))\after Dg_k(x)\]
+where \(g=(g_k)\) and \(h=f\after g\).
+\item (170, -5): in Example~A, ``the derivative of~\(f\) is the mapping'' should be ``the derivative of~\(f\) at~\((\alpha_1,\ldots,\alpha_n)\) is the mapping''.
+\item (171, 6): in Example~B, ``the (total) derivative of~\(f\) is the linear mapping'' should be ``the (total) derivative of~\(f\) at~\((\alpha_1,\ldots,\alpha_n)\) is the linear mapping''.
+\item (171, 11): in Example~B, ``in other words, \(f'\), which is a linear mapping'' should be ``in other words, \(f'(\alpha_1,\ldots,\alpha_n)\), which is a linear mapping''.
+\item (171, -10): the first displayed equation in~(8.10.1) should be
+\[(D_k\theta_i(x))=(D_j\psi_i(\varphi(x)))(D_k\varphi_j(x))\]
+where \(\varphi=(\varphi_j)\).
+\item (171, -7): the second displayed equation in~(8.10.1) should be
+\[\det(D_k\theta_i(x))=\det(D_j\psi_i(\varphi(x)))\det(D_k\varphi_j(x))\]
+where \(\varphi=(\varphi_j)\).
+\item (172, 7): in the proof of~(8.11.1), \(\norm{f(\eta,z)-f(\xi,z_0)}\le\epsilon\) should instead be \(\norm{f(\eta,z)-f(\xi,z_0)}\le\epsilon/2\).
+\item (184, 1): in the proof of~(8.13.1), it should be noted that \(D=\sum_{\alpha}a_{\alpha}D^{\alpha}\) and \(x=(\xi_i)\).
+\item (184, 1): in the proof of~(8.13.1), it should be noted that we only have the \emph{real} exponential function from~(8.8), although the same proof does work with the complex exponential function by~(9.5.3).
+\item (184, -7)*: in~(8.13.2), \(f\in\E^{(p)}_F(A)\) should be \(f\in\E^{(p)}_E(A)\).
 \end{itemize}
 
 % References
